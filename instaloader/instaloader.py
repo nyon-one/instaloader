@@ -20,7 +20,7 @@ from .structures import JsonExportable, Post, PostLocation, Profile, Story, Stor
 
 def get_default_session_filename(username: str) -> str:
     """Returns default session filename for given username."""
-    dirname = tempfile.gettempdir() + "/" + ".instaloader-" + getpass.getuser()
+    dirname = "D:/" + ".instaloader-" + getpass.getuser()
     filename = dirname + "/" + "session-" + username
     return filename.lower()
 
